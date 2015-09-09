@@ -37,7 +37,7 @@ go1Sum$ps<-0
 go1Sum$ps[go1Sum$goassessDxpmr4=="4PS"]<-1
 go1Sum$td<-0
 go1Sum$td[go1Sum$goassessDxpmr4!="4PS" & go1Sum$goassessSmryPsychOverallRtg<4 & go1Sum$ltnExclude==0]<-1
-go1SumSubset<-go1Sum[,c("bblid","scanid","ageAtGo1Scan","sex","race","ps","td")]  #want demo varaibles, PS
+go1SumSubset<-go1Sum[,c("bblid","scanid","ageAtGo1Scan","healthExclude","sex","race","ps","td")]  #want demo varaibles, PS
 
 #subset Go2 to releveant cols
 go2Subset<-go2[,c("bblid","go2_dx")]
@@ -47,12 +47,13 @@ go1Comb<-merge(go1ItemSubset,go1SumSubset,by="bblid",all=FALSE)  #note that have
 
 
 #subset Go1 Data to irrit, then collapse to unique subjects across interview type, then add go2
-go1Irrit<-go1Comb[which(go1Comb$irritBin==1),c("bblid","scanid","ageAtGo1Scan","sex","race","ps","td","irritBin")]
+go1Irrit<-go1Comb[which(go1Comb$irritBin==1),c("bblid","scanid","ageAtGo1Scan","healthExclude","sex","race","ps","td","irritBin")]
 go1Irrit<-go1Irrit[!duplicated(go1Irrit),]
 go1Irrit<-go1Irrit[-which(go1Irrit$td==1),]  #remove squeaky-clean TDs from irritable group
-#924 of the 1601!; 405 of these are PS
+go1Irrit<-go1Irrit[-which(go1Irrit$healthExclude==1),]
+#822 of the 1601!; 367 of these are PS
 go1Go2Irrit<-merge(go1Irrit,go2Subset,by="bblid",all.x=TRUE)   
-#around an even mix of CR (119) and TD (112), note that there are 2 duplicates here from Go2
+#around an even mix of CR (111) and TD (107), note that there are 2 duplicates here from Go2
 
 #now TDs-- must be TD at Go1, and NOT screen positive for any irritable items
 go1Td<-go1Comb[which(go1Comb$td==1 & go1Comb$irritBin==0),c("bblid","scanid","ageAtGo1Scan","sex","race","ps","td","irritBin")]  
