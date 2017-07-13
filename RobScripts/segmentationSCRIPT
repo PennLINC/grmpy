@@ -1,0 +1,19 @@
+#!/bin/sh
+
+input=$1
+outdir=$2
+
+echo AntsAtroposN4.sh -d 3 -a ${input}.nii.gz -x ${input}binarytemplet.nii.gz -c 3 -o $outdir/${input}seg
+AntsAtroposN4.sh -d 3 -a $input.nii.gz -x ${input}binarytemplet.nii.gz -c 3 -o $outdir/${input}seg
+
+<<COMMANDLINE
+
+
+T1subjects:'Asample Bsample Csample Dsample'
+
+for i in $T1subjects; do i=$(imglob ${i}); ./segmentationSCRIPT $i Segmentation; done 
+
+
+COMMANDLINE
+
+

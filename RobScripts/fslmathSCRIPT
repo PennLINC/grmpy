@@ -1,0 +1,32 @@
+#!/bin/sh 
+
+input=$1
+outdir=$2
+
+source ~/../rciric/xcpAccelerator/xcpEngine/core/functions/is_image
+
+if is_image $outdir/${input}binary ; then 
+
+   echo "Binary Image Already Completed"
+
+else 
+
+   echo fslmaths $input -bin $outdir/${input}binary
+    fslmaths $input -bin $outdir/${input}binary
+
+fi 
+
+
+<<COMMANDLINE
+
+#T1subjects=*sample.nii.gz   #used to create a variable that entails all of the images selected
+
+
+for i in $T1subjects; do i=$(imglob ${i}); ./fslmathSCRIPT $i binaryimages; done 
+
+
+COMMANDLINE
+
+
+#Creates a binary map of the selected images (input) and saves them to a new directory (outdir); needed to perform brain extraction through the ANTs pipeline
+
