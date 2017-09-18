@@ -1,0 +1,25 @@
+#!/bin/sh
+
+input=$1
+sequence=$2
+imgCheck=$(ls ${input}/*/${sequence}/nifti/*.nii.gz 2>/dev/null)
+
+if [[ -n ${imgCheck} ]] ; then 
+   
+   echo "Structural Image Already Exists"
+   
+else
+
+echo ${input} >> missingsubjects.txt
+   
+fi
+ 
+   
+<<COMMANDLINE
+
+subjects=/data/joy/BBL/studies/grmpy/rawData/*
+
+for s in $subjects; do ./MissingSubectScript $s sequence; done
+
+COMMANDLINE
+
