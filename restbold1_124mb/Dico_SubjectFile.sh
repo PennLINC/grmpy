@@ -10,8 +10,8 @@
 ###################################################################################################
 <<Use
 
-This script was created to identify the subjects of interest and list their information into correct format. This script in particular was specifically used to apply Distortion Correction on RestBold Images.
-
+This script was created to identify the subjects of interest and list their information into correct format.
+In particular, this cohort script was specifically used to help apply Distortion Correction on RestBold Images.
 
 Use
 ###################################################################################################
@@ -32,10 +32,12 @@ magmap=$(echo /data/joy/BBL/studies/grmpy/processedData/B0map/${bblIDs}/${Subjec
 Mask=$(echo /data/joy/BBL/studies/grmpy/processedData/B0map/${bblIDs}/${SubjectxDate}/*_mask.nii.gz)
 
 
-echo ${bblIDs},${SubjectxDate},${r},${rpsmap},${magmap},${Mask}>>${outdirect}/SubjFile_RestingBold124mb.csv
+echo ${bblIDs},${SubjectxDate},${r},${rpsmap},${magmap},${Mask}>>${outdirect}/n102_DicoCohort_20171007.csv
 
 done
 
 ###################################################################################################
 #####  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  #####
 ###################################################################################################
+
+
