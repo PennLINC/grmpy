@@ -26,11 +26,11 @@ outdirect=/data/joy/BBL/projects/grmpyProcessing2017/NMF
 
 for s in $subjects; do 
 
-bblIDs=$(echo ${s}|cut -d'/' -f10|sed s@'/'@' '@g)
-SubjectxDate=$(echo ${s}|cut -d'/' -f11|sed s@'/'@' '@g|sed s@'x'@','@g)
-scanID=$(echo ${SubjectxDate}|cut -d',' -f2)
+   bblIDs=$(echo ${s}|cut -d'/' -f10|sed s@'/'@' '@g)
+   SubjectxDate=$(echo ${s}|cut -d'/' -f11|sed s@'/'@' '@g|sed s@'x'@','@g)
+   scanID=$(echo ${SubjectxDate}|cut -d',' -f2)
 
-echo ${bblIDs},${scanID}>>${outdirect}/n118_Cohort_20171015.csv
+   echo ${bblIDs},${scanID}>>${outdirect}/n118_Cohort_20171015.csv
 
 done
 
@@ -38,31 +38,37 @@ Cohort=$(cat ${outdirect}/n118_Cohort_20171015.csv)
 
 i=0
 for c in ${Cohort}; do
-for q in ${QAExclude}; do
+   for q in ${QAExclude}; do
 
-if [[ ${c} -eq ${q} ]]; then
+      if [[ ${c} == ${q} ]]; then
 
-    echo "Bad QA Will Be Excluded"
+          echo "Bad QA Will Be Excluded"
+          unset final[i]
+          break
 
-else 
+      else 
 
-   final[i]=$(echo ${c})
+         final[i]=$(echo ${c})
+         
+      fi 
+      
+   done
    
-fi 
-
-
+   echo ${final[i]}>>${outdirect}/n115_Cohort_20171015.csv 
+   
+   (( i++ ))
+   
 done
-done
 
 
-echo ${final[i]}>>${outdirect}/n115_Cohort_20171015.csv 
-
-((i++))
-
-#rm ${outdirect}/n118_Cohort_20171015.csv
-
+rm ${outdirect}/n118_Cohort_20171015.csv
 
 
 ###################################################################################################
 #####  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  ⚡  #####
 ###################################################################################################
+<<ALTERNATIVECODE
+
+cat n115_Cohort_20171015.csv|grep -v '106331,10587'|grep -v '121476,10280'|grep -v '85083,10577'>>OUTPUT
+
+ALTERNATIVECODE
