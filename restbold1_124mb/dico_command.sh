@@ -27,12 +27,11 @@ Use
 
 subjects=$(cat /data/joy/BBL/projects/grmpyProcessing2017/restbold1_124mb/SubjFile_RestingBold124mb.csv)
 
-
-for s in $subjects; do 
-
 #############################################
 ### Reads Cohort File to Define the Input ###
 #############################################
+
+for s in $subjects; do 
 
 s=(${s//,/ })
 bblid=${s[0]}
