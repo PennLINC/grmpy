@@ -86,7 +86,7 @@ templateMask=/data/joy/BBL/studies/pnc/template/templateMask.nii.gz
 templatePriors=/data/joy/BBL/studies/pnc/template/priors/prior_00%d.nii.gz
 templateNonExtracted=/data/joy/BBL/studies/pnc/template/pnc_template.nii.gz
 templateMaskDil=/data/joy/BBL/studies/pnc/template/templateMaskDil.nii.gz
-structural_rerun[1]=Y
+structural_rerun[1]=N
 structural_cleanup[1]=Y
 structural_process[1]=ACT
 
@@ -95,7 +95,7 @@ structural_process[1]=ACT
 ###################################################################
 
 gmdMask[2]=/data/joy/BBL/studies/grmpy/processedData/structural/struct_pipeline_20170821${subject[0]}/${subject[1]}/antsCT/${subject[0]}_${subject[1]}_BrainExtractionMask
-gmd_rerun[2]=Y
+gmd_rerun[2]=N
 gmd_cleanup[2]=Y
 
 ###################################################################
@@ -113,7 +113,7 @@ jlf_rerun[3]=Y
 ###################################################################
 
 roiquant_roi[4]=/data/joy/BBL/projects/grmpyProcessing2017/structural/LaunchPipeline/grmpy.parc
-roiquant_rerun[4]=Y
+roiquant_rerun[4]=N
 roiquant_cleanup[4]=Y
 
 ###################################################################
@@ -138,5 +138,5 @@ strucQA_csf_val[6]=1
 strucQA_cort[6]=Y
 strucQA_cort_val[6]=4
 strucQA_seg[6]=/data/joy/BBL/studies/grmpy/processedData/structural/struct_pipeline_20170821/${subject[0]}/${subject[1]}/antsCT/${subject[0]}_${subject[1]}_BrainSegmentation
-strucQA_rerun[6]=Y
+strucQA_rerun[6]=N
 strucQA_cleanup[6]=Y
