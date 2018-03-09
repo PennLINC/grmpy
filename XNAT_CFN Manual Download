@@ -1,0 +1,45 @@
+######################################################################################
+### For Coordinators:                                                              ###
+### Once You have downloaded all data to XNat (including PMU and frack-back files),###
+### you will use these scripts to manually download NIFTIs from XNAT to CfN.       ###
+######################################################################################
+
+### Step 1: Open Terminal and log in to chead. ###
+ssh -Y username@chead
+
+### Step 2: Begin a Q-login Session by simply typing: ###
+qlogin
+
+### Step 3: IF you only have ONE SCAN SESSION to download, ###
+### use the following script and fill in "[SCANID}" with the subject's Scan ID: ###
+
+/share/apps/python/Python-2.7.9/bin/python /data/jux/BBL/applications-from-joy/scripts/
+bin/dicoms2nifti_bblxnat.py -scanid [SCANID] -download 1 -outdir /data/jux/BBL/studies/
+grmpy/rawData -tmpdir /data/jux/BBL/studies/grmpy/temp
+-check_existing 0 -force_unmatched 0 -download_example_dicom 0 -download_dicoms 0 -skip_oblique 0
+
+### Step3 ALTERNATE: If you are downloading MORE THAN ONE SCAN SESSION,###
+### run the following for-loop, and fill in '123 456 789' with Scan ID's separated by spaces:###
+
+Subs='123 456 789'
+
+For s in ${Subs}; do
+
+/share/apps/python/Python-2.7.9/bin/python /data/jux/BBL/applications-from-joy/scripts/bin/
+dicoms2nifti_bblxnat.py -scanid ${n} -download 1 -outdir /data/jux/BBL/studies/grmpy/rawData
+-tmpdir /data/jux/BBL/studies/grmpy/temp 
+-check_existing 0 -force_unmatched 0 -download_example_dicom 0 -download_dicoms 0 -skip_oblique 0 &
+
+done
+
+### Once your sessoin is complete, be sure to type "exit" twice, once to exit the qlogin and once to exit chead###
+
+exit
+
+exit
+
+######################################################################################
+### Once You have downloaded all data to CHead go to Saturn>Coordinators>Protocols>###
+### TED_PROTOCOLS>GRMPY_822831>image tracking and enter the BBLID, ScanID and Date ###
+### that you completed the XNat--> CfN download. Mark as complete in REDCAP.       ###
+######################################################################################
