@@ -8,8 +8,7 @@ Demo<-read.csv("/data/jux/BBL/studies/grmpy/rawPsycha1/demographics_20180803.csv
 ##### Remove Unneeded Columns #####
 ###################################
 
-Demo<-Demo[,-c(3)]
-Demo<-Demo[-c(1,2),]
+Demo<-Demo[,-c(3,4,5)] #remove entry, istatus, and cstatus
 
 #################################################
 ##### Recode Variables that Need Processing #####
