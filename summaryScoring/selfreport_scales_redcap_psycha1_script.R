@@ -3,7 +3,11 @@
 #Caluclates summary scores for the State and Trait Self-Report scales.
 
 #### STATE-TRAIT SCALES ####
-currentDate<-Sys.Date()
+## Find the correct date to use (aka use the most recent file):
+rawPsycha1 <- list.files("/data/jux/BBL/studies/grmpy/rawPsycha1/")
+rawPsycha1_dates <- regmatches(rawPsycha1, regexpr("[0-9].*[0-9]", rawPsycha1))
+rawPsycha1_dates <- as.numeric(rawPsycha1_dates)
+currentDate <- rawPsycha1_dates[which.max(rawPsycha1_dates)]
 
 grumpy<-read.csv("/import/monstrum/grmpy/n103DataFreeze/rawData/n103grmpyStateTraitScales20170131.csv")
 
@@ -343,24 +347,8 @@ BEST_SummaryScores$BEST_final = (BEST_SummaryScores$subscaleA + BEST_SummaryScor
 # *Note that subscale C: Positive Behaviors is not administered and therefore the correction factor of 15 is not included here.
 
 # Merge all summary scores and put into a csv #
-scored_StateTrait <- merge(ALS_SummaryScores, MAPSR_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, SWAN_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, SWANcoll_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, ACES_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, SCARED_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, SCAREDcoll_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, RPAQ_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, ARI_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, ARIcoll_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, BDI_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, BISBAS_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, GRIT_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, HCL_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, BSS_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, RPASSHORT_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, RSASSHORT_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, ESWAN_DMDD_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, PSQI_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
-scored_StateTrait <- merge(scored_StateTrait, BEST_SummaryScores, "bblid", all.x = TRUE, all.y = TRUE)
+selfReportScoring1 <- Reduce(function(x,y) merge(x,y, all=TRUE), list(ALS_SummaryScores,SWAN_SummaryScores,ACES_SummaryScores, SCARED_SummaryScores, RPAQ_SummaryScores, ARI_SummaryScores, BDI_SummaryScores, BISBAS_SummaryScores))
+selfReportScoring2 <- Reduce(function(x,y) merge(x,y, all=TRUE), list(GRIT_SummaryScores, HCL_SummaryScores, BSS_SummaryScores, RPASSHORT_SummaryScores, RSASSHORT_SummaryScores, ESWAN_DMDD_SummaryScores, PSQI_SummaryScores, BEST_SummaryScores))
+selfReportScoring <- merge(selfReportScoring1, selfReportScoring2,"bblid", all.x = TRUE, all.y = TRUE)
 
-write.csv(scored_StateTrait, paste('/data/jux/BBL/studies/grmpy/rawPsycha1/scored_StateTrait_', currentDate, '.csv', sep = '')
+write.csv(selfReportScoring, paste("/data/jux/BBL/studies/grmpy/processedPsycha1_", currentDate, ".csv", sep = ""))
