@@ -5,13 +5,17 @@
 ##### demographics_currentDate.csv             #####
 ####################################################
 
-currentDate <- format(Sys.Date(), "%Y%m%d")
+## Find the correct date to use (aka use the most recent file):
+rawPsycha1 <- list.files("/data/jux/BBL/studies/grmpy/rawPsycha1/")
+rawPsycha1_dates <- regmatches(rawPsycha1, regexpr("[0-9].*[0-9]", rawPsycha1))
+rawPsycha1_dates <- as.numeric(rawPsycha1_dates)
+currentDate <- rawPsycha1_dates[which.max(rawPsycha1_dates)]
 
 ############################################
 ##### Read in the Raw Demographic File #####
 ############################################
 
-Demo<-read.csv("/data/jux/BBL/studies/grmpy/rawPsycha1/demographics_20180803.csv")
+Demo<-read.csv(paste("/data/jux/BBL/studies/grmpy/rawPsycha1/demographics_", currentDate, ".csv", sep = ""))
 
 ###################################
 ##### Remove Unneeded Columns #####
