@@ -1,0 +1,32 @@
+{
+   "Name" : "struc-ACCELERATOR",
+   "Design" : "/home/aadebimpe/data/jux/BBL/projects/grmpyProcessing/grmpyProcessing2017Scripts/BIDS_mockup/scripts/anat-antsct.dsn",
+   "Cohort" : "/home/aadebimpe/data/jux/BBL/projects/grmpyProcessing/grmpyProcessing2017Scripts/BIDS_mockup/scripts/tempcohort.csv",
+   "Output" : "/home/aadebimpe/data/jux/BBL/projects/grmpyProcessing/grmpyProcessing2017Scripts/BIDS_mockup/scripts",
+   "Scratch" : "",
+   "ExecutionMode" : "s",
+   "Versions" : {
+      "Processing" : "xcpEngine-v0.7.0-prerelease",
+      "AFNI" : "AFNI_18.2.13) ",
+      "ANTs" : "2.2.0.dev815-g0740f ",
+      "FSL" : "fsl-5.0.10 ",
+      "C3D" : "1.1.0 ",
+      "JQ" : "jq-1.5",
+      "R" : "3.3.3 ",
+      "RScript" : "3.3.3 ",
+      "optparse" : "1.6.0",
+      "pracma" : "2.1.4",
+      "RNifti" : "0.8.1",
+      "signal" : "0.7.6"
+   },
+   "Environment" : {
+      "Processing" : "/xcpEngine-master",
+      "AFNI" : "/opt/afni-latest",
+      "ANTs" : "/opt/ants-2.2.0",
+      "C3D" : "/opt/convert3d-nightly/bin",
+      "FSL" : "/opt/fsl-5.0.10"
+   },
+   "CodeURL" : "https://github.com/PennBBL/xcpEngine",
+   "Citation" : "Ciric2017",
+   "License" : "GPL"
+}

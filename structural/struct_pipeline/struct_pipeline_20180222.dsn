@@ -94,7 +94,7 @@ structural_process[1]=ACT
 # 2 GMD
 ###################################################################
 
-gmdMask[2]=/data/joy/BBL/studies/grmpy/processedData/structural/struct_pipeline_20170716${subject[0]}/${subject[1]}/antsCT/${subject[0]}_${subject[1]}_BrainExtractionMask
+gmdMask[2]=/data/jux/BBL/studies/grmpy/processedData/structural/struct_pipeline_20170716${subject[0]}/${subject[1]}/antsCT/${subject[0]}_${subject[1]}_BrainExtractionMask
 gmd_rerun[2]=Y
 gmd_cleanup[2]=Y
 

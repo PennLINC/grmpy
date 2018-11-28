@@ -1,0 +1,31 @@
+
+
+
+
+
+
+###################################################################
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+#                                                                 #
+#  ☭                   XCP ENGINE LOCALISER                    ☭  #
+#                                                                 #
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+###################################################################
+
+
+
+
+
+
+###################################################################
+# ✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡ #
+#                                                                 #
+#  ☭               STRUCTURAL PROCESSING MODULE                ☭  #
+#                                                                 #
+# ✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡ #
+###################################################################
+
+
+
+                             -   -   -
+>> antsCorticalThickness.sh -d 3 -a /home/aadebimpe/data/jux/BBL/projects/grmpyProcessing/grmpyProcessing2017Scripts/BIDS_mockup/scripts/102041/20170907x10603/struc/102041_20170907x10603~TEMP~.nii.gz -e /xcpEngine-master/space/PNC/PNC-9375x9375x1Head.nii.gz -m /xcpEngine-master/space/PNC/PNC-9375x9375x1BrainPrior.nii.gz -p /xcpEngine-master/space/PNC/PNC_priors/PNC-priors-%03d.nii.gz -o /home/aadebimpe/data/jux/BBL/projects/grmpyProcessing/grmpyProcessing2017Scripts/BIDS_mockup/scripts/102041/20170907x10603/struc/102041_20170907x10603_ -s nii.gz -t /xcpEngine-master/space/PNC/PNC-9375x9375x1.nii.gz -f /xcpEngine-master/space/PNC/PNC-9375x9375x1MaskDilated.nii.gz -g 1 -w 0.25 -b Socrates[1] -j 0 -u 0 -v 0 -q 0

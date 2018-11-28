@@ -1,0 +1,33 @@
+{
+  "MNI%1x1x1": {
+    "Map": "/xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz"
+  },
+  "MNI%2x2x2": {
+    "Map": "/xcpEngine-master/space/MNI/MNI-2x2x2.nii.gz"
+  },
+  "MNI:PNC": {
+    "TransformANTs": [
+      "/xcpEngine-master/space/PNC/PNC_transforms/MNI-PNC_0Affine.mat",
+      "/xcpEngine-master/space/PNC/PNC_transforms/MNI-PNC_1Warp.nii.gz"
+    ]
+  },
+  "PNC%2x2x2": {
+    "Map": "/xcpEngine-master/space/PNC/PNC-2x2x2.nii.gz"
+  },
+  "PNC%9375x9375x1": {
+    "BrainPrior": "/xcpEngine-master/space/PNC/PNC-9375x9375x1BrainPrior.nii.gz",
+    "Citation": "/xcpEngine-master/space/PNC/PNC_reference.bib",
+    "Map": "/xcpEngine-master/space/PNC/PNC-9375x9375x1.nii.gz",
+    "MapHead": "/xcpEngine-master/space/PNC/PNC-9375x9375x1Head.nii.gz",
+    "Mask": "/xcpEngine-master/space/PNC/PNC-9375x9375x1Mask.nii.gz",
+    "MaskDilated": "/xcpEngine-master/space/PNC/PNC-9375x9375x1MaskDilated.nii.gz",
+    "Priors": "/xcpEngine-master/space/PNC/PNC_priors/PNC-priors-%03d.nii.gz",
+    "Sample": "/xcpEngine-master/space/PNC/PNC_sample.csv"
+  },
+  "PNC:MNI": {
+    "TransformANTs": [
+      "/xcpEngine-master/space/PNC/PNC_transforms/PNC-MNI_0Warp.nii.gz",
+      "/xcpEngine-master/space/PNC/PNC_transforms/PNC-MNI_1Affine.mat"
+    ]
+  }
+}
