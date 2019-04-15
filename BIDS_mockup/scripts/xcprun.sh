@@ -1,14 +1,14 @@
-
-
-COHORTXCP=/data/jux/BBL/projects/grmpyProcessing/grmpyProcessing2017Scripts/BIDS_mockup/scripts/cohortfile.csv
-FULL_COHORT=$COHORTXCP
-NJOBS=$(wc -l <  ${FULL_COHORT})
-num=$(expr $NJOBS - 1);
-
+#!/bin/bash
 SNGL=/share/apps/singularity/2.5.1/bin/singularity
-SIMG=/data/joy/BBL/applications/bids_apps/xcpEngine-struc.simg
-DESIGN=/data/jux/BBL/projects/grmpyProcessing/grmpyProcessing2017Scripts/BIDS_mockup/scripts/anat-antsct.dsn
-OUTPUT=/data/jux/BBL/studies/grmpy/processedData/bids_structural
+XCP=/data/joy/BBL/applications/bids_apps/xcpEngine.simg
+SNGL_BIND=/home/aadebimpe
+
+
+
+cohort_file=${SNGL_BIND}/data/jux/BBL/studies/grmpy/BIDSOUTPUT/scripts/cohortfile.csv
+design_file=${SNGL_BIND}/data/jux/BBL/studies/grmpy/BIDSOUTPUT/scripts/anat-antsct.dsn 
+temp_dir=/tmp/2477491.1.qlogin.himem.q
+output_dir=${SNGL_BIND}/data/jux/BBL/studies/grmpy/BIDSOUTPUT/structural  
 
 
 
@@ -28,3 +28,5 @@ for j in $bb; do
     qsub xcpRunm_${j}.sh
 
 done 
+=======
+
