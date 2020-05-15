@@ -3,7 +3,7 @@
 
 
 
-# GRMPY_822831 Image Processing Workflow
+# Image Processing Workflow
 This is documentation of how GRMPY_822831 was processed on Flywheel. All files referenced in input can be found attached to the project.
 
 ## Steps Overview:
