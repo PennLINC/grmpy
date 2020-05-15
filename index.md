@@ -334,7 +334,7 @@ The following subjects had their ASL and M0 derived from .dat files:
 | 99964 | 10105 |
 
 
-# GRMPY Scoring
+# GRMPY Self-Report Scoring
 
 The GRMPY Self-Report Scales were scored and uploaded using the Custom-Info Upload Tool detailed in the [Self-Report Score and Upload Gear](https://pennlinc.github.io/docs/flywheel/uploadingDocs/)
 
