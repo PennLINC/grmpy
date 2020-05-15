@@ -50,7 +50,7 @@ extended_bids: true
 **Gear Name:** fMRIPREP: A Robust Preprocessing Pipeline for fMRI Data [fw-heudiconv]
 
 
-**Version:** 0.3.2_20.0.5
+**Version:** 0.3.2_20.0.7
 
 
 **Inputs:** license.txt
