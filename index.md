@@ -1,4 +1,7 @@
-## This Page Is In Development
+# GRMPY: Study Documentation (This Page Is In Development)
+
+
+Written By: Diego G. Dávila
 
 
 
