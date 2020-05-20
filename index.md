@@ -7,7 +7,7 @@ Written By: Diego G. Dávila
 
 
 # Image Processing Workflow
-This is documentation of how GRMPY_822831 was processed on Flywheel. All files referenced in input can be found attached to the project.
+This is documentation of how GRMPY_822831 was processed on Flywheel. 
 
 ## Steps Overview:
 Each step is a flywheel gear that has been launched on each subject in the project.
@@ -31,15 +31,8 @@ Each step is a flywheel gear that has been launched on each subject in the proje
 Heuristic: [grmpy_heuristic_v4.py](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/grmpy_heuristic_v4.py)
 
 
-**Gear Configuration:**
+[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/heudiconvConfiguration.json)
 
-action: Curate
-
-do_whole_project: false
-
-dry_run: false
-
-extended_bids: true
 
 **Output:** None. This curates the project in BIDS.
 
@@ -59,79 +52,7 @@ extended_bids: true
 **Inputs:** license.txt
 
 
-**Gear Configuration:**
-
-anat_only:	false
-
-aroma_melodic_dimensionality:	-200
-
-bold2t1w_dof:	6
-
-cifti_output:	None
-
-dummy_scans:	0
-
-dvars_spike_threshold:	1.5
-
-fd_spike_threshold:	0.5
-
-fmap_bspline:	false
-
-fmap_no_demean:	false
-
-force_bbr:	false
-
-force_no_bbr:	false
-
-force_syn:	false
-
-fs_no_reconall:	false
-
-longitudinal:	false
-
-low_mem:	false
-
-medial_surface_nan:	false
-
-no_submm_recon:	false
-
-no_track:	false
-
-output_spaces:	MNI152NLin2009cAsym
-
-return_all_components:	false
-
-save_intermediate_work:	false
-
-save_outputs:	false
-
-sge-cpu:	8
-
-sge-ram:	64G
-
-sge-short:	false
-
-singularity-debug:	false
-
-singularity-writable:	false
-
-skip_bids_validation:	false
-
-skull_strip_fixed_seed:	false
-
-skull_strip_template:	OASIS30ANTs
-
-sloppy_mode:	false
-
-t2s_coreg:	false
-
-timeout:	2
-
-use_all_sessions:	false
-
-use_aroma:	false
-
-use_syn_sdc:	false
+[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/fmriprepConfiguration.json)
 
 
 **Output:**
