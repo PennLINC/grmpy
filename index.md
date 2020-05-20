@@ -28,7 +28,7 @@ Each step is a flywheel gear that has been launched on each subject in the proje
 
 **Inputs:**
 
-Heuristic: grmpy_heuristic_v4.py
+Heuristic: [grmpy_heuristic_v4.py](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/grmpy_heuristic_v4.py)
 
 
 **Gear Configuration:**
