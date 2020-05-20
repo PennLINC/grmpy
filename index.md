@@ -49,7 +49,7 @@ Heuristic: [grmpy_heuristic_v4.py](https://github.com/PennLINC/grmpy/blob/gh-pag
 **Version:** 0.3.2_20.0.7
 
 
-**Inputs:** license.txt
+**Inputs:** license.txt (This is a [freesurfer](https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferWiki) license)
 
 
 [**Gear Configuration**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/fmriprepConfiguration.json)
