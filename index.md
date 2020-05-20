@@ -31,7 +31,7 @@ Each step is a flywheel gear that has been launched on each subject in the proje
 Heuristic: [grmpy_heuristic_v4.py](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/grmpy_heuristic_v4.py)
 
 
-[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/heudiconvConfiguration.json)
+[**Gear Configuration**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/heudiconvConfiguration.json)
 
 
 **Output:** None. This curates the project in BIDS.
@@ -52,7 +52,7 @@ Heuristic: [grmpy_heuristic_v4.py](https://github.com/PennLINC/grmpy/blob/gh-pag
 **Inputs:** license.txt
 
 
-[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/fmriprepConfiguration.json)
+[**Gear Configuration**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/fmriprepConfiguration.json)
 
 
 **Output:**
