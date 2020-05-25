@@ -4,6 +4,50 @@
 Written By: Diego G. Dávila
 
 
+# ASL Source Documentation
+
+The ASL sequences in GRMPY were acquired in distinct ways throughout data collection. Resultantly, the ASL acquisitions in GRMPY can roughly be divided into 3 groups based on their origin, and method of acquisition.
+
+## Group 1:
+
+While the majority of ASL sequences in GRMPY were acquired as dicoms and converted to niftis, some were collected as unreconstructed .dat files and subsequently converted to niftis.
+Those subjects who had their ASL sequences collected as .dat files and converted to niftis had their M0 attached as the last two slices.
+These M0 slices were cut into their own nifti file, and were uploaded to Flywheel along with the ASL nifti, to an acquisition called 'ASL'. The asl nifti was named 'asl_reconstructed', and the m0 nifti was named "m0_reconstructed".
+
+The original .dat files are currently backed up in the GRMPY drive, as well as CUBIC.
+
+[This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_reconlist.csv) of subjects had their ASL and M0 derived from .dat files:
+
+## Group 2:
+
+[This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group2.csv) of subjects' ASL sequences have associated dicoms, and the following naming convention:
+
+ASL Sequence: ASL_3DSPIRAL_V20_GE_ASL
+
+M0 Sequence: ASL_3DSPIRAL_V20_GE_M0
+
+Mean CBF: ASL_3DSPIRAL_V20_GE_MeanPerf
+
+## Group 3:
+
+[This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group3.csv) of subjects' ASL sequences have associated dicoms, and the following naming convention:
+
+acquisition name: 12
+
+Filename 1: ASL_3DSPIRAL_V20_GE_12_Eq_1.nii.gz
+
+Filename 2:ASL_3DSPIRAL_V20_GE_12.nii.gz
+
+
+acquisition name: 13
+
+Filename 3: ASL_3DSPIRAL_V20_GE_13.nii.gz
+
+
+acquisition name: 14
+
+Filename 4: ASL_3DSPIRAL_V20_GE_14.nii.gz
+
 
 
 # Image Processing Workflow
@@ -169,96 +213,6 @@ analysis type:	xcp
 Processed Output: xcpEngineouput_xcp.zip
 
 Cohort File: cohortfile.csv
-
-
-# ASL Source Documentation
-
-While the majority of ASL sequences in GRMPY were acquired as dicoms and converted to niftis, some were collected as unreconstructed .dat files and subsequently converted to niftis.
-Those subjects who had their ASL sequences collected as .dat files and converted to niftis had their M0 attached as the last two slices.
-These M0 slices were cut into their own nifti file, and were uploaded to Flywheel along with the ASL nifti, to an acquisition called 'ASL'. The asl nifti was named 'asl_reconstructed', and the m0 nifti was named "m0_reconstructed".
-
-The original .dat files are currently backed up in the GRMPY drive, as well as CUBIC.
-
-The following subjects had their ASL and M0 derived from .dat files:
-
-| bblid | scanid |
-|-------|--------|
-| 103679 | 10110 |
-| 105979 | 10067 |
-| 110168 | 10095 |
-| 110828 | 10134 |
-| 112061 | 10056 |
-| 112126 | 9968 |
-| 113111 | 9958 |
-| 114713 | 10107 |
-| 114990 | 10096 |
-| 116019 | 10078 |
-| 116051 | 10098 |
-| 116210 | 10102 |
-| 116360 | 10097 |
-| 117226 | 10074 |
-| 118393 | 10094 |
-| 118864 | 10127 |
-| 118990 | 10156 |
-| 119302 | 10122 |
-| 119791 | 10082 |
-| 121085 | 10015 |
-| 121670 | 10158 |
-| 122916 | 10114 |
-| 125535 | 10150 |
-| 125554 | 10058 |
-| 126903 | 10112 |
-| 127305 | 10152 |
-| 127542 | 10115 |
-| 128061 | 10153 |
-| 129405 | 10136 |
-| 129926 | 10111 |
-| 130211 | 10106 |
-| 130759 | 10137 |
-| 130896 | 9956 |
-| 132224 | 10151 |
-| 139272 | 10109 |
-| 81760 | 10132 |
-| 82051 | 9947 |
-| 82492 | 10046 |
-| 82790 | 10059 |
-| 83010 | 10101 |
-| 83454 | 10161 |
-| 83999 | 10099 |
-| 84103 | 9970 |
-| 84973 | 10075 |
-| 85173 | 10069 |
-| 85853 | 10103 |
-| 86287 | 10083 |
-| 86350 | 9955 |
-| 86444 | 10076 |
-| 86924 | 10035 |
-| 87135 | 9969 |
-| 87457 | 10081 |
-| 87538 | 9942 |
-| 87804 | 10026 |
-| 87990 | 9995 |
-| 88209 | 10057 |
-| 88608 | 10165 |
-| 90060 | 10180 |
-| 90262 | 10131 |
-| 90281 | 10147 |
-| 90683 | 10142 |
-| 91919 | 10117 |
-| 92554 | 10133 |
-| 93051 | 10149 |
-| 93169 | 10113 |
-| 93278 | 10148 |
-| 93292 | 10145 |
-| 93406 | 10138 |
-| 93734 | 10092 |
-| 93787 | 10163 |
-| 94848 | 10121 |
-| 98314 | 10120 |
-| 98394 | 10025 |
-| 98831 | 10084 |
-| 99352 | 10126 |
-| 99964 | 10105 |
 
 
 # GRMPY Self-Report and N-Back Task Scoring
