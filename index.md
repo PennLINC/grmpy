@@ -3,6 +3,7 @@
 
 Written By: Diego G. Dávila
 
+# Table Of Contents
 1. TOC
 {:toc}
 
