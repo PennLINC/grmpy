@@ -3,6 +3,8 @@
 
 Written By: Diego G. Dávila
 
+1. TOC
+{:toc}
 
 # ASL Source Documentation
 
