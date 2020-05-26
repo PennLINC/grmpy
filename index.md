@@ -56,7 +56,7 @@ Filename 4: ASL_3DSPIRAL_V20_GE_14.nii.gz
 # Image Processing Workflow
 This is documentation of how GRMPY_822831 was processed on Flywheel. 
 
-## Steps Overview:
+## Steps Overview
 Each step is a flywheel gear that has been launched on each subject in the project.
 1. Heudiconv
 2. fMRIPREP
