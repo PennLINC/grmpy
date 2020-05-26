@@ -11,7 +11,7 @@ Written By: Diego G. Dávila
 
 The ASL sequences in GRMPY were acquired in distinct ways throughout data collection. Resultantly, the ASL acquisitions in GRMPY can roughly be divided into 3 groups based on their origin, and method of acquisition.
 
-## Group 1:
+## Group 1
 
 While the majority of ASL sequences in GRMPY were acquired as dicoms and converted to niftis, some were collected as unreconstructed .dat files and subsequently converted to niftis.
 Those subjects who had their ASL sequences collected as .dat files and converted to niftis had their M0 attached as the last two slices.
@@ -21,7 +21,7 @@ The original .dat files are currently backed up in the GRMPY drive, as well as C
 
 [This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_reconlist.csv) of subjects had their ASL and M0 derived from .dat files:
 
-## Group 2:
+## Group 2
 
 [This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group2.csv) of subjects' ASL sequences have associated dicoms, and the following naming convention:
 
@@ -31,7 +31,7 @@ M0 Sequence: ASL_3DSPIRAL_V20_GE_M0
 
 Mean CBF: ASL_3DSPIRAL_V20_GE_MeanPerf
 
-## Group 3:
+## Group 3
 
 [This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group3.csv) of subjects' ASL sequences have associated dicoms, and the following naming convention:
 
@@ -173,6 +173,8 @@ Cohort File: cohortfile.csv
 
 ## Step 5: N-Back Task
 
+### N-Back Logfile Scoring
+
 The n-back task logfiles were scored using [this notebook](https://github.com/PennLINC/grmpy/blob/gh-pages/grmpy_nback_scoreALL.ipynb), with [this template file](https://github.com/PennLINC/grmpy/blob/gh-pages/grympytemplate.xml). The output csv was uploaded to Flywheel using the [Custom Info Uploader](https://pennlinc.github.io/docs/flywheel/usingCustomInfoUploader/). 
 
 ### XCP - Task Functional
@@ -218,7 +220,7 @@ Processed Output: xcpEngineouput_xcp.zip
 Cohort File: cohortfile.csv
 
 
-# GRMPY Self-Report and N-Back Task Scoring
+# GRMPY Self-Report Scoring
 
 
 The GRMPY Self-Report Scales were scored and uploaded using the Custom-Info Upload Tool detailed in the [Self-Report Score and Upload Gear](https://pennlinc.github.io/docs/flywheel/uploadingDocs/). The scoring code is an R script that can be found [here](https://github.com/PennLINC/grmpy/blob/gh-pages/summaryScoring/GRMPY_selfReportScoringCode_v4.R).
