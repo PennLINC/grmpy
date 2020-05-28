@@ -15,7 +15,7 @@ While the majority of ASL sequences in GRMPY were acquired as dicoms and convert
 Those subjects who had their ASL sequences collected as .dat files and converted to niftis had their M0 attached as the last two slices.
 These M0 slices were cut into their own nifti file, and were uploaded to Flywheel along with the ASL nifti, to an acquisition called 'ASL'. The asl nifti was named 'asl_reconstructed', and the m0 nifti was named "m0_reconstructed".
 
-The original .dat files are currently backed up in the GRMPY drive, as well as CUBIC.
+The original .dat files could not be uploaded to Flywheel, but they can be found in the following CUBIC directory: ```/cbica/projects/diego_networks/ASL_recon_backup/DAT```
 
 [This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_reconlist.csv) of subjects had their ASL and M0 derived from .dat files:
 
