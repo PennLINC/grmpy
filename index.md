@@ -33,21 +33,21 @@ Mean CBF: ASL_3DSPIRAL_V20_GE_MeanPerf
 
 [This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group3.csv) of subjects' ASL sequences have associated dicoms, and the following naming convention:
 
-acquisition name: 12
+acquisition name: 12 (These are the M0 Images)
 
-Filename 1: ASL_3DSPIRAL_V20_GE_12_Eq_1.nii.gz
+Filename 1: ASL_3DSPIRAL_V20_GE_12_Eq_1.nii.gz <- *These are the correct M0 Images*
 
-Filename 2:ASL_3DSPIRAL_V20_GE_12.nii.gz
-
-
-acquisition name: 13
-
-Filename 3: ASL_3DSPIRAL_V20_GE_13.nii.gz
+Filename 2:ASL_3DSPIRAL_V20_GE_12.nii.gz <- *These M0s should not be used*
 
 
-acquisition name: 14
+acquisition name: 13 (These are the ASL Images) 
 
-Filename 4: ASL_3DSPIRAL_V20_GE_14.nii.gz
+Filename 3: ASL_3DSPIRAL_V20_GE_13.nii.gz 
+
+
+acquisition name: 14 (These are the Mean CBF Images) 
+
+Filename 4: ASL_3DSPIRAL_V20_GE_14.nii.gz 
 
 
 
