@@ -7,7 +7,7 @@ Written By: Diego G. Dávila
 
 # ASL Source Documentation
 
-The ASL sequences in GRMPY were acquired in distinct ways throughout data collection. Resultantly, the ASL acquisitions in GRMPY can roughly be divided into 3 groups based on their origin, and method of acquisition.
+The ASL sequences in GRMPY were acquired in distinct ways throughout data collection. Resultantly, the ASL acquisitions in GRMPY can be divided into 2 groups based on their origin, and method of acquisition.
 
 ## Group 1
 
@@ -19,19 +19,9 @@ The original .dat files could not be uploaded to Flywheel, but they can be found
 
 [This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_reconlist.csv) of subjects had their ASL and M0 derived from .dat files:
 
-## Group 2
+## Group 2 (PROBLEMATIC)
 
-[This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group2.csv) of subjects' ASL sequences have associated dicoms, and the following naming convention:
-
-ASL Sequence: ASL_3DSPIRAL_V20_GE_ASL
-
-M0 Sequence: ASL_3DSPIRAL_V20_GE_M0
-
-Mean CBF: ASL_3DSPIRAL_V20_GE_MeanPerf
-
-## Group 3 (PROBLEMATIC)
-
-[This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group3.csv) of subjects' ASL sequences have associated dicoms. This group has several names within each acquisiton that do not distinguish between images. 
+[This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group2.csv) of subjects' ASL sequences have associated dicoms. This group has several names within each acquisiton that do not distinguish between images. These sequences were uploaded to Flywheel from several sources including XNAT and Stellar Chance 3T. 
 
 In order to differentiate between ASL, M0, and Mean Perfusion, refer to BIDS view in the GUI, or BIDS Info via the SDK. 
 This group also has two M0 images per acquisiton. However, one M0 is nominal, and another is low quality. As of 6/2/20, the only way of determining which M0 to use is by sight. Some M0s do not have proper associated metadata. 
