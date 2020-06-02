@@ -148,21 +148,19 @@ Cohort File: cohortfile.csv
 **Gear Name:** XCPENGINE: pipeline for processing of structural and functional data.
 
 
-**Version:** 0.0.1_1.00
+**Version:** 0.0.2_1.2.1
 
 
 **Inputs:**
 
-fMRIPREP Output: fmriprep_filename.zip
+fMRIPREP Output: fmriprep_filename.zip (This is unique to each subject)
 
-Design File: cbf_scorescrub_basil_v3.dsn
+[Design File](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/cbf_new2.dsn)
 
-ASL Nifti: asl_image.nii.gz
+ASL Nifti: asl_image.nii.gz (This is unique to each subject)
 
 
-**Gear Configuration:**
-
-analysis_type:	cbf
+[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/xcp_cbf_config.json)
 
 
 **Output:**
