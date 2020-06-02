@@ -108,8 +108,41 @@ Processed Output: fmriprep_filename.zip
 
 Source Code: fmriprep_run.sh
 
+## Step 3: N-Back Task
 
-## Step 3: XCP - CBF
+### N-Back Logfile Scoring
+
+The n-back task logfiles were scored using [this notebook](https://github.com/PennLINC/grmpy/blob/gh-pages/grmpy_nback_scoreALL.ipynb), with [this template file](https://github.com/PennLINC/grmpy/blob/gh-pages/grympytemplate.xml). The output csv was uploaded to Flywheel using the [Custom Info Uploader](https://pennlinc.github.io/docs/flywheel/usingCustomInfoUploader/). 
+
+### XCP - Task Functional
+
+**Gear Name:** XCPENGINE: pipeline for processing of structural and functional data.
+
+
+**Version:** 0.0.2_1.2.1
+
+
+**Inputs:**
+
+fMRIPREP Output: fmriprep_filename.zip
+
+[Design File](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/task2.dsn)
+
+Zip of necessary files: [taskfile.zip](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/taskfile2.zip)
+
+
+[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/xcp_task_config.json)
+
+
+**Output:**
+
+Processed Output: xcpEngineouput_xcp.zip
+
+Cohort File: cohortfile.csv
+
+
+
+## Step 4: XCP - CBF
 
 
 **Gear Name:** XCPENGINE: pipeline for processing of structural and functional data.
@@ -139,7 +172,7 @@ Processed Output: xcpEngineouput_cbf.zip
 Cohort File: cohortfile.csv
 
 
-## Step 4: XCP - Resting State Functional
+## Step 5: XCP - Resting State Functional
 
 
 **Gear Name:** XCPENGINE: pipeline for processing of structural and functional data.
@@ -169,7 +202,7 @@ Processed Output: xcpEngineouput_xcp.zip
 Cohort File: cohortfile.csv
 
 
-## Step 5: N-Back Task
+## Step 3: N-Back Task
 
 ### N-Back Logfile Scoring
 
