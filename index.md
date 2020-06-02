@@ -124,7 +124,7 @@ The n-back task logfiles were scored using [this notebook](https://github.com/Pe
 
 **Inputs:**
 
-fMRIPREP Output: fmriprep_filename.zip
+fMRIPREP Output: fmriprep_filename.zip (This is unique to each subject)
 
 [Design File](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/task2.dsn)
 
