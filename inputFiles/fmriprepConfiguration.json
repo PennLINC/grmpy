@@ -38,7 +38,7 @@
   "use_all_sessions": False,
   "use_aroma": False,
   "use_syn_sdc": False,
-  "FREESURFER_LICENSE":"",
+  "FREESURFER_LICENSE": "{\"classification\": {},\n \"created\": datetime.datetime(2019, 4, 15, 19, 42, 58, 968000, tzinfo=tzutc()),\n \"hash\": \"v0-sha384-ac4374121e8656ddbdeb95debd4ab4279211b6b28723af21e8b21cef6e0ff0b74c6f6a458a6b495561bbdddbd74f7d6e\",\n \"id\": \"6a04d055-2327-4883-a89f-fd425f2ef1a4\",\n \"info\": {\"BIDS\": {\"Filename\": \"\",\n                   \"Folder\": \"\",\n                   \"Path\": \"\",\n                   \"error_message\": "Filename u\"\" is too short",\n                   \"ignore\": False,\n                   \"template\": \"project_file\",\n                   \"valid\": False}},\n \"info_exists\": True,\n \"mimetype\": \"text/plain\",\n \"modality\": None,\n \"modified\": datetime.datetime(2019, 5, 2, 15, 48, 29, 892000, tzinfo=tzutc()),\n \"name\": \"license.txt\",\n \"origin\": {\"id\": \"tinashemtapera@gmail.com\",\n            \"method\": None,\n            \"name\": None,\n            \"type\": \"user\",\n            \"via\": None},\n \"replaced\": None,\n \"size\": 55,\n \"tags\": [],\n \"type\": \"text\",\n \"zip_member_count\": None}"},
  "inputs": {"freesurfer_license": {"base": "file",
    "hierarchy": {"type": "project", "id": "5c743dc7ba258000383968cd"},
    "location": {"name": "license.txt",
