@@ -58,9 +58,9 @@ This is documentation of how GRMPY_822831 was processed on Flywheel.
 Each step is a flywheel gear that has been launched on each subject in the project.
 1. Heudiconv
 2. fMRIPREP
-3. XCP - CBF
-4. XCP - Resting State Functional
-5. XCP - Task Functional
+3. XCP - Task Functional
+4. XCP - CBF
+5. XCP - Resting State Functional
 
 ## Step 1: Heudiconv
 
