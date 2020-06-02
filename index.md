@@ -131,7 +131,7 @@ fMRIPREP Output: fmriprep_filename.zip (This is unique to each subject)
 Zip of necessary files: [taskfile.zip](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/taskfile2.zip)
 
 
-[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/xcp_task_config.json)
+[**Gear Configuration**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/xcp_task_config.json)
 
 
 **Output:**
@@ -160,7 +160,7 @@ fMRIPREP Output: fmriprep_filename.zip (This is unique to each subject)
 ASL Nifti: asl_image.nii.gz (This is unique to each subject)
 
 
-[**Gear Configuration:**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/xcp_cbf_config.json)
+[**Gear Configuration**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/xcp_cbf_config.json)
 
 
 **Output:**
