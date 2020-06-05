@@ -158,21 +158,17 @@ Cohort File: cohortfile.csv
 **Gear Name:** XCPENGINE: pipeline for processing of structural and functional data.
 
 
-**Version:** 0.0.1_1.00
+**Version:** 0.0.2_1.2.1
 
 
 **Inputs:**
 
-fMRIPREP Output: fmriprep_filename.zip
+fMRIPREP Output: fmriprep_filename.zip (This is unique to each subject)
 
-Design File: fc-36p_despike.dsn
+[Design File](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/fc-36p_despike.dsn)
 
 
-**Gear Configuration:**
-
-analysis type:	func
-
-analysis type:	xcp
+[**Gear Configuration**](https://github.com/PennLINC/grmpy/blob/gh-pages/inputFiles/xcp_func_config.json)
 
 
 **Output:**
