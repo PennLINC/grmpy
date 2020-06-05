@@ -24,7 +24,7 @@ The original .dat files could not be uploaded to Flywheel, but they can be found
 [This list](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/grmpy_asl_group2.csv) of subjects' ASL sequences have associated dicoms. This group has several names within each acquisiton that do not distinguish between images. These sequences were uploaded to Flywheel from several sources including XNAT and Stellar Chance 3T. 
 
 In order to differentiate between ASL, M0, and Mean Perfusion, refer to BIDS view in the GUI, or BIDS Info via the SDK. 
-This group also has two M0 images per acquisiton. However, one M0 is nominal, and another is low quality. As of 6/2/20, the only way of determining which M0 to use is by sight. Some M0s do not have proper associated metadata. 
+[This](https://github.com/PennLINC/grmpy/blob/gh-pages/referenceFiles/multiple_m0.csv) group also has two M0 images per acquisiton. However, one M0 is nominal, and another is low quality. As of 6/2/20, the only way of determining which M0 to use is by sight. Some M0s do not have proper associated metadata. 
 
 Solution as of 6/2/2020, as per meeting with Ted, Diego, and Azeez: 
 1. Refer users to BIDS info or BIDS view to differentiate between ASL, M0, and Mean Perfusion images. 
