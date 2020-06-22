@@ -33,7 +33,7 @@ Solution as of 6/2/2020, as per meeting with Ted, Diego, and Azeez:
 
 
 
-# Image Processing Workflow
+# Image Processing Workflow 
 This is documentation of how GRMPY_822831 was processed on Flywheel. 
 
 ## Steps Overview
@@ -178,8 +178,14 @@ Processed Output: xcpEngineouput_xcp.zip
 Cohort File: cohortfile.csv
 
 
+# GRMPY Data Type Documentation 
+
+Ancillary data collected through the GRMPY protocol is stored on flywheel. A list of each data type collected, n per study group, naming convention, and other information is found [here](https://docs.google.com/spreadsheets/d/19Ga4Syb7b3r299mqGkwYt3KR5v8FL1tfErUrgLXz7-c/edit#gid=0). 
+
 # GRMPY Self-Report Scoring
 
 
 The GRMPY Self-Report Scales were scored and uploaded using the Custom-Info Upload Tool detailed in the [Self-Report Score and Upload Gear](https://pennlinc.github.io/docs/flywheel/uploadingDocs/). The scoring code is an R script that can be found [here](https://github.com/PennLINC/grmpy/blob/gh-pages/summaryScoring/GRMPY_selfReportScoringCode_v4.R).
+
+
 
