@@ -1,9 +1,23 @@
-# GRMPY: Study Documentation (This Page Is In Development)
+# GRMPY: A longitudinal study of irritability in youth
 
-Written By: Diego G. Dávila
+#
 
 1. TOC
 {:toc}
+
+
+# Study Design
+
+
+# GRMPY Data Type Documentation 
+
+Data collected through the GRMPY protocol is stored on flywheel. A list of each data type collected, n per study group, naming convention, and other information is found [here](https://docs.google.com/spreadsheets/d/19Ga4Syb7b3r299mqGkwYt3KR5v8FL1tfErUrgLXz7-c/edit#gid=0). 
+
+
+# GRMPY Self-Report Scoring
+
+The GRMPY Self-Report Scales were scored and uploaded using the Custom-Info Upload Tool detailed in the [Self-Report Score and Upload Gear](https://pennlinc.github.io/docs/flywheel/uploadingDocs/). The scoring code is an R script that can be found [here](https://github.com/PennLINC/grmpy/blob/gh-pages/summaryScoring/GRMPY_selfReportScoringCode_v4.R).
+
 
 # ASL Source Documentation
 
@@ -30,7 +44,6 @@ Solution as of 6/2/2020, as per meeting with Ted, Diego, and Azeez:
 1. Refer users to BIDS info or BIDS view to differentiate between ASL, M0, and Mean Perfusion images. 
 2. Determine the "bad" M0 images and delete them manually. 
 3. Copy over proper associated metadata onto the correct M0s, from the ASL metadata. 
-
 
 
 # Image Processing Workflow 
@@ -176,16 +189,5 @@ fMRIPREP Output: fmriprep_filename.zip (This is unique to each subject)
 Processed Output: xcpEngineouput_xcp.zip
 
 Cohort File: cohortfile.csv
-
-
-# GRMPY Data Type Documentation 
-
-Ancillary data collected through the GRMPY protocol is stored on flywheel. A list of each data type collected, n per study group, naming convention, and other information is found [here](https://docs.google.com/spreadsheets/d/19Ga4Syb7b3r299mqGkwYt3KR5v8FL1tfErUrgLXz7-c/edit#gid=0). 
-
-# GRMPY Self-Report Scoring
-
-
-The GRMPY Self-Report Scales were scored and uploaded using the Custom-Info Upload Tool detailed in the [Self-Report Score and Upload Gear](https://pennlinc.github.io/docs/flywheel/uploadingDocs/). The scoring code is an R script that can be found [here](https://github.com/PennLINC/grmpy/blob/gh-pages/summaryScoring/GRMPY_selfReportScoringCode_v4.R).
-
 
 
